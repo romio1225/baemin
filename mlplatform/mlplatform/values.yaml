@@ -1,0 +1,47 @@
+server:
+  port: 18081
+
+mysql:
+  username: root
+  password: root
+  database: mlplatform
+  port: 3306
+
+rabbitmq:
+  username: MLAdmin
+  password: tmaxtower
+
+loadBalancer:
+  enabled: false
+  ip: 192.1.1.99
+  export: 8501
+
+kubernetes:
+  istio:
+    ingressgateway:
+      ip: 192.168.179.31
+      port: 31380
+
+
+backend:
+  image: biqa.tmax.com/v20.5.0.4.0/hyperdata20.5_mlplatform/backend:20230804_v1
+  resources:
+    limits:
+      cpu: 1
+      memory: 1G
+    requests:
+      cpu: 1
+      memory: 1G
+  volume:
+    mountPath: /mlplatform
+    storageClass: nfs
+    size: 10Gi
+
+solution:
+  image: biqa.tmax.com/v20.5.0.4.0/hyperdata20.5_mlplatform/agent:20230804_v1
+
+downloader:
+  image: biqa.tmax.com/v20.5.0.4.0/hyperdata20.5_mlplatform/downloader:20230804_v1
+
+serving:
+  image: biqa.tmax.com/v20.5.0.4.0/hyperdata20.5_mlplatform/kserve:20230804_v1

@@ -1,0 +1,21 @@
+image: biqa.tmax.com/v20.5.0.4.0/hyperdata20.5_be_common:20230804_v1
+
+# hd version
+implementation_version: 20.5.0.4.0
+implementation_date: "2023/08/04"
+# sql schema version
+schema_version: 20.5.0.4.0
+
+hyperdata:
+  revision:
+    system: "17194884"
+    virtualization: "ec738e89"
+    flow: "7f4dde24"
+    visualization: "79121f24"
+
+
+db:
+  mountPath: /db
+  # tibero headless service name
+  ip: tiberolocaldns
+  persistentVolumeClaimName: tibero-pvc-db
