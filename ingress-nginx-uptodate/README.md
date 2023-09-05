@@ -41,7 +41,7 @@
         --set controller.service.ports.https=8080
         ```
 
-3. Uninstall Nginx
+4. Uninstall Nginx
     ```
     helm delete -n hyperdata ingress-nginx
     ```
