@@ -23,7 +23,7 @@
 
 1. 이미지에는 희망하는 이미지를 사용하시면 됩니다.
 
-1) mysql
+   1) mysql
    ```
    helm install -n hyperdata ml-mysql ml-mysql \
    --set mysql.image=biqa.tmax.com/hyperdata20.5_rel/hyperdata20.5_mlplatform/mysql:20230623_v1
