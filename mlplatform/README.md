@@ -1,5 +1,5 @@
 # 사전 설치 항목들
-# istio, cert-manger, knative-serving, kserve 를 한번에 설치
+## istio, cert-manger, knative-serving, kserve 를 한번에 설치
 
 1. quick_install.sh 를 통해 설치
    ```
@@ -14,6 +14,7 @@
    😀 Successfully installed KServe
    ```
 
+## argo는 바로 상위 폴더에서 argo 폴더에서 기존 설치가이드대로 설치하면 됨.
 
 
 # mlplatform
