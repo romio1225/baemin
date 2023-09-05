@@ -7,9 +7,8 @@
 
 2. create nginx
 
-    2.1. metallb loadbalancer로 설치할 경우
-   
-       ```
+    2.1. metallb loadbalancer로 설치할 경우   
+       
         helm install -n hyperdata ingress-nginx ingress-nginx-uptodate \
         --set fullnameOverride=hyperdata \
         --set controller.ingressClassResource.name=hyperdata-nginx \
@@ -25,11 +24,9 @@
         --set controller.service.enableHttps=true \
         --set controller.service.ports.https=8080 \
         --set controller.service.loadBalancerIP=${NGINX_IP 주로 metallb 할당 가능 ip}
-       ```
 
     2.2. nodePort로 설치할 경우
    
-       ```
         helm install -n hyperdata ingress-nginx ingress-nginx-uptodate \
         --set fullnameOverride=hyperdata \
         --set controller.ingressClassResource.name=hyperdata-nginx \
@@ -41,9 +38,8 @@
         --set controller.service.enableHttp=false \
         --set controller.service.enableHttps=true \
         --set controller.service.ports.https=8080
-       ```
 
-4. Uninstall Nginx
+3. Uninstall Nginx
     ```
     helm delete -n hyperdata ingress-nginx
     ```
