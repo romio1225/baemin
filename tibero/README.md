@@ -1,3 +1,6 @@
+# k8s-1.24는 kind: PodSecurityPolicy 가 없어졌기 때문에, templates 메니페스트에서 삭제함. 해당 내용은 db.yaml 에 securityContext로 들어감.
+
+
 # tibero
 
 1. install tibero
