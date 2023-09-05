@@ -1,3 +1,21 @@
+# 사전 설치 항목들
+# istio, cert-manger, knative-serving, kserve 를 한번에 설치
+
+1. quick_install.sh 를 통해 설치
+   ```
+   bash quick_install.sh
+   ```
+   cf) 만약 kserve까지 웃음마크가 안떠도 다시 계속 위 명령어를 입력하여 설치 완료한다.
+   ```
+   ...
+   ...
+   clusterservingruntime.serving.kserve.io/kserve-tritonserver unchanged
+   clusterservingruntime.serving.kserve.io/kserve-xgbserver unchanged
+   😀 Successfully installed KServe
+   ```
+
+
+
 # mlplatform
 
 1. 이미지에는 희망하는 이미지를 사용하시면 됩니다. 
