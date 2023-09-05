@@ -8,6 +8,7 @@
 2. create nginx
 
     2.1. metallb loadbalancer로 설치할 경우
+   
        ```
         helm install -n hyperdata ingress-nginx ingress-nginx-uptodate \
         --set fullnameOverride=hyperdata \
@@ -27,6 +28,7 @@
        ```
 
     2.2. nodePort로 설치할 경우
+   
        ```
         helm install -n hyperdata ingress-nginx ingress-nginx-uptodate \
         --set fullnameOverride=hyperdata \
