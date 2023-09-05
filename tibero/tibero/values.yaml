@@ -8,14 +8,14 @@ db:
   persistentVolumeClaimName: tibero-pvc-db
   mountPath: /db
 
-shmSize: 2G
-memoryTarget: 4G
+shmSize: 5G
+memoryTarget: 10G
 
 resources:
   requests:
     cpu: 1.3
-    memory: 6Gi
+    memory: 12Gi
   limits:
     cpu: 1.3
-    memory: 6Gi
+    memory: 12Gi
   storage: 40Gi

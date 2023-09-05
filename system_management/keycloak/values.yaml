@@ -997,7 +997,8 @@ postgresql:
 ## @param externalDatabase.existingSecretPasswordKey Name of an existing secret key containing the database credentials
 ##
 externalDatabase:
-  host: ""
+  #host: "postgresql"
+  host: 10.102.220.128
   port: 5555
   user: admin
   database: keycloak

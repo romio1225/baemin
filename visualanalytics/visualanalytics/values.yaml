@@ -12,15 +12,15 @@ proxy:
   timeout: 1800
 
 server:
-  ip: 192.168.220.101
-  port: 30900
+  ip: 192.168.220.250
+  port: 30214
   servlet:
     contextPath: /hyperdata/v1
   home: /cnb
   do: /do
   share:
-    host_url: "192.168.220.101"
-    port: "30900"
+    host_url: "192.168.220.250"
+    port: "30214"
 
 download_max_row: -1
 
@@ -57,10 +57,10 @@ db:
 resources:
   requests:
     cpu: 2
-    memory: 4Gi
+    memory: 2Gi
   limits:
     cpu: 2
-    memory: 4Gi
+    memory: 2Gi
 
 spark:
   partition:

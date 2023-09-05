@@ -5,11 +5,13 @@
 replicaCount: 1
 
 image:
-  repository: 192.1.1.93:31234/hyperdata_v20.5_system/system_management
+  #repository: 192.1.1.93:31234/hyperdata_v20.5_system/system_management
+  repository: biqa.tmax.com/v20.5.0.4.0/hyperdata20.5_system/system_management
 #  repository: harbor:31234/hyperdata_v20.5_system/system_management
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: 5f091111
+  #tag: 5f091111
+  tag: 20230804_v1
 
 pvc:
   name: tibero-pvc-db
@@ -119,10 +121,13 @@ spring:
     enable: true
     host: rabbitmq
     port: 5672
-    username: guest
-    password: guest
+    username: Admin
+    password: tmaxtower
+    #username: guest
+    #password: guest
   mail:
     enable: false
+    #enable: true
     host: smtp.gmail.com
     port: 587
     properties:
@@ -185,7 +190,9 @@ keycloak:
   authServerUrl: http://keycloak:8888/
   sslRequired: none
   resource: HyperDataLogin
-  secret: SECRET
+  #secret: SECRET
+  #secret: uIgg0v0ulUw17Y4VrOKDmuvOatKhGObI
+  secret: a2KhacE96GBD1IlbNlq8IavGfcFlbzu4
   #credentials:
   #  secret: SECRET
   useResourceRoleMappings: true

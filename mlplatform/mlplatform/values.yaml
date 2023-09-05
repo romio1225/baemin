@@ -19,8 +19,8 @@ loadBalancer:
 kubernetes:
   istio:
     ingressgateway:
-      ip: 192.168.179.31
-      port: 31380
+      ip: 192.168.220.250
+      port: 30286
 
 
 backend:
@@ -34,7 +34,7 @@ backend:
       memory: 1G
   volume:
     mountPath: /mlplatform
-    storageClass: nfs
+    storageClass: nfs-client
     size: 10Gi
 
 solution:
