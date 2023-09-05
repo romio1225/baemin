@@ -42,8 +42,9 @@
    sed -z "s/\ndata:\n/\ndata:\n  registries-skipping-tag-resolving: \"biqa.tmax.com\"\n/g" | \
    kubectl apply -f -
    ```
-   cf) # List of repositories for which tag to digest resolving should be skipped
-         registries-skipping-tag-resolving: "kind.local,ko.local,dev.local"
+      cf) # List of repositories for which tag to digest resolving should be skipped
+            registries-skipping-tag-resolving: "kind.local,ko.local,dev.local"
+   
 
    3-1) mlplatform - NodePort 사용시
    ```
