@@ -23,13 +23,13 @@
 
 1. 이미지에는 희망하는 이미지를 사용하시면 됩니다.
 
-   1) mysql 
+1) mysql
    ```
    helm install -n hyperdata ml-mysql ml-mysql \
    --set mysql.image=biqa.tmax.com/hyperdata20.5_rel/hyperdata20.5_mlplatform/mysql:20230623_v1
    ```
 
-   2-1) enable registriesSkippingTagResolving (구 버전)
+   2-1) enable registriesSkippingTagResolving (구 버전) 이 configmap설정은 모델 배포를 위한 설정임.
    ```
    kubectl get cm -n knative-serving config-deployment -o yaml | \
    sed -z "s/\ndata:\n/\ndata:\n  registriesSkippingTagResolving: \"${REGISTRY_IP}:${REGISTRY_PORT}\"\n/g" | \
