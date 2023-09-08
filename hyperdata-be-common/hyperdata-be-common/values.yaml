@@ -1,10 +1,13 @@
-image: biqa.tmax.com/v20.5.0.4.0/hyperdata20.5_be_common:20230804_v1
+#image: biqa.tmax.com/v20.5.0.4.0/hyperdata20.5_be_common:20230804_v1
+image: localhost:5000/v20.5.0.5.0/hyperdata20.5_be_common:20230908_v1
 
 # hd version
-implementation_version: 20.5.0.4.0
+#implementation_version: 20.5.0.4.0
+implementation_version: 20.5.0.5.0
 implementation_date: "2023/08/04"
 # sql schema version
-schema_version: 20.5.0.4.0
+#schema_version: 20.5.0.4.0
+schema_version: 20.5.0.5.0
 
 hyperdata:
   revision:
@@ -17,5 +20,9 @@ hyperdata:
 db:
   mountPath: /db
   # tibero headless service name
-  ip: tiberolocaldns
+  #ip: tiberolocaldns.bd.svc.cluster.local
+  ip: 172.16.112.53
+  #ip: tiberolocaldns
+  port: 8629
+  sid: tibero
   persistentVolumeClaimName: tibero-pvc-db
