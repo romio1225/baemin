@@ -1,0 +1,54 @@
+# image: biqa.tmax.com/v20.5/hyperdata20.5_virtualization:20230504_v1
+image: hyperregistry-dev.deliveryservice.or.kr/bi/v20.5.0.5.0/hyperdata20.5_virtualization:20230901_v2
+
+ingressClassName: maads-dev-bi-nginx
+
+proxy:
+  bodysize: 0
+  # minutes
+  timeout: 1800
+
+server:
+  port: 8100
+  servlet:
+    contextPath: /hyperdata20
+
+db:
+  #address: tiberolocaldns
+  #port: 8629
+  #sid: tibero
+  address: 222.122.51.143
+  port: 5051
+  sid: tibero_maads_dev
+
+pvc:
+  name: tibero-pvc-db
+  mountPath: /db
+
+resources:
+  requests:
+    cpu: 500m
+    memory: 4Gi
+  limits:
+    cpu: 2
+    memory: 4Gi
+
+hyperdata:
+  address: hyperdata-svc-hd
+  port: 8080
+
+loadBalancer:
+  #enabled: true
+  enabled: false
+  ip: 192.168.179.38 #하이퍼데이터 로드밸런서 ip랑 같아야 함
+  extport: 8500
+
+logging:
+  path: virtualization/logs
+
+version:
+  major: 20
+
+rabbitmq:
+  username: VAdmin
+  password: tmaxtower

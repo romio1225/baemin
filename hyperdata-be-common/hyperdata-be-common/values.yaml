@@ -1,0 +1,29 @@
+image: hyperregistry-dev.deliveryservice.or.kr/bi/v20.5.0.5.0/hyperdata20.5_be_common:20230912_v1
+#image: hyperregistry-dev.deliveryservice.or.kr/bi/hyperdata20.5_rel_tb/be_common:230918_715c7781
+
+# hd version
+implementation_version: 20.5.0.5.0
+implementation_date: "2023/09/04"
+# sql schema version
+schema_version: 20.5.0.5.0
+
+hyperdata:
+  revision:
+    system: "8a556b43"
+    virtualization: "9f48e6c1"
+    flow: "7b7ca124"
+    visualization: "a3a1bce7"
+
+
+db:
+  # mountPath: /db
+  # # tibero headless service name
+  # ip: tiberolocaldns
+  # persistentVolumeClaimName: tibero-pvc-db
+
+  mountPath: /db
+  #ip: tiberolocaldns.bd.svc.cluster.local
+  ip: 222.122.51.143
+  port: 5051
+  sid: tibero_maads_dev
+  persistentVolumeClaimName: tibero-pvc-db

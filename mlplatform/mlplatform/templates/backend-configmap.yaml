@@ -1,0 +1,71 @@
+apiVersion: v1
+data:
+  application-docker.yml: |
+    server:
+      port: {{  .Values.server.port }}
+      shutdown: graceful
+
+    spring:
+      datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://mlplatform-mysql-svc:{{ .Values.mysql.port }}/mlplatform
+        username: {{ .Values.mysql.username }}
+        password: {{ .Values.mysql.password }}
+
+        hikari:
+          maximum-pool-size: 40
+
+      flyway:
+        url: jdbc:mysql://mlplatform-mysql-svc:{{ .Values.mysql.port }}/mlplatform
+        user: {{ .Values.mysql.username }}
+        password: {{ .Values.mysql.password }}
+        enabled: true
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        baseline-version: 0
+        baseline-on-migrate: true
+        locations: db/migration
+
+      jpa:
+        show-sql: true
+        open-in-view: false
+        properties:
+          hibernate:
+            jdbc:
+              time_zone: Asia/Seoul
+
+      rabbitmq:
+        host: rabbitmq
+        port: 5672
+        username: {{ .Values.rabbitmq.username }}
+        password: {{ .Values.rabbitmq.password }}
+
+    kubernetes:
+      config:
+        type: kubernetes
+        argo-serviceaccount-name: default
+        kserve-serviceaccount-name: kserve-sa
+        imagePullSecret: mlplatform-harbor-regcred
+
+    mlplatform:
+      mount-path: /home/mlplatform/
+
+    server-config: {{ if .Values.loadBalancer.enabled }}
+      mlplatform-address: http://mlplatform-backend-svc.{{ .Release.Namespace }}.svc.cluster.local:8501 {{ else }}
+      mlplatform-address: http://mlplatform-backend-svc.{{ .Release.Namespace }}.svc.cluster.local:{{ .Values.server.port }} {{ end }}
+      hyperdata-address: http://hyperdata-virtualization-svc.{{ .Release.Namespace }}.svc.cluster.local:8500
+      system-address: http://hyperdata-system-svc.{{ .Release.Namespace }}.svc.cluster.local:8100
+
+    solution:
+      config:
+        path: solution
+    image:
+      downloader: {{ .Values.downloader.image }}
+ 
+    gateway:
+      config:
+        ip: {{ .Values.kubernetes.istio.ingressgateway.ip }} 
+        port: {{ .Values.kubernetes.istio.ingressgateway.port }}
+
+kind: ConfigMap
+metadata:
+  name: mlplatform-backend-deploy-configmap

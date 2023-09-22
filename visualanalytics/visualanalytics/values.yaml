@@ -1,0 +1,81 @@
+# image: biqa.tmax.com/v20.5/hyperdata20.5_visualization:20230504_v1
+#image: hyperregistry-dev.deliveryservice.or.kr/bi/v20.5.0.5.0/hyperdata20.5_visualization:20230901_v2
+image: hyperregistry-dev.deliveryservice.or.kr/bi/hyperdata20.5_rel/hyperdata20.5_visualization:20230918_6dc45930
+
+ingressClassName: maads-dev-bi-nginx
+
+version:
+  major: 20
+
+https:
+  enabled: true
+
+proxy:
+  bodysize: 1024m
+  # minutes
+  timeout: 1800
+
+server:
+  # ip: 192.1.1.249
+  # port: 30303
+  ip: 10.151.30.16
+  port: 443
+  servlet:
+    contextPath: /hyperdata/v1
+  home: /cnb
+  do: /do
+  share:
+    # host_url: "192.1.1.249"
+    # port: "30303"
+    host_url: "10.151.30.16"
+    port: "443"
+
+download_max_row: -1
+
+hyperdata_svc:
+  virtualization:
+    name:
+      hyperdata-virtualization-svc
+    port:
+      8500
+  system:
+    name:
+      hyperdata-system-svc
+    port:
+      8100
+
+
+loadBalancer:
+  #enabled: true
+  enabled: false
+  #ip: 192.1.1.93
+  ip: 10.151.30.16
+
+loggingPath: /db/visualization
+
+db:
+  # address: tiberolocaldns
+  # port: 8629
+  address: 222.122.51.143
+  port: 5051
+  persistentVolumeClaimName: tibero-pvc-db
+  mountPath: /db
+  username: hyperdata
+  password: tmax
+  # sid: tibero
+  sid: tibero_maads_dev
+  driver_class_name: com.tmax.tibero.jdbc.TbDriver
+  # jdbc_url: jdbc:tibero:thin:@tiberolocaldns:8629:tibero
+  jdbc_url: jdbc:tibero:thin:@222.122.51.143:5051:tibero_maads_dev
+
+resources:
+  requests:
+    cpu: 300m
+    memory: 2Gi
+  limits:
+    cpu: 1
+    memory: 4Gi
+
+spark:
+  partition:
+    shuffle_partition: 1
