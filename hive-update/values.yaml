@@ -1,6 +1,8 @@
 image:
     #hive: biqa.tmax.com/hyperdata20.5_rel/hyperdata20.5_hiveozone:20230426_v1
     #hive: hyperregistry-dev.deliveryservice.or.kr/bi/hyperdata20.5_rel/hyperdata20.5_hiveozone:20230905_v1
-    hive: hyperregistry-dev.deliveryservice.or.kr/bi/hyperdata20.5_rel/hyperdata20.5_hiveozone:20230908_v1
+    #hive: hyperregistry-dev.deliveryservice.or.kr/bi/hyperdata20.5_rel/hyperdata20.5_hiveozone:20230908_v1
+    hive: hyperregistry-stg.deliveryservice.or.kr/bi/hyperdata20.5_rel/hyperdata20.5_hiveozone:20230908_v1
     #busybox: biqa.tmax.com/hyperdata20.5_rel/busybox:20230829_v1
-    busybox: hyperregistry-dev.deliveryservice.or.kr/bi/v20.5/hyperdata20.5_hive/busybox:v1.0
+    #busybox: hyperregistry-dev.deliveryservice.or.kr/bi/v20.5/hyperdata20.5_hive/busybox:v1.0
+    busybox: hyperregistry-stg.deliveryservice.or.kr/bi/v20.5/hyperdata20.5_hive/busybox:v1.0

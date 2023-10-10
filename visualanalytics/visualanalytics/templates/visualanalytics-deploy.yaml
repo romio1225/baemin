@@ -15,6 +15,17 @@ spec:
         lb: hyperdata-visualanalytics
         app: hyperdata-visualanalytics
     spec:
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: kubernetes.io/hostname
+                operator: In
+                values:
+                - maads-stg-worker04
+                - maads-stg-worker05
+                - maads-stg-worker06
       containers:
         - name: hyperdata-visualanalytics-con
           image: {{ .Values.image }}

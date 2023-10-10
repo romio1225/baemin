@@ -36,8 +36,19 @@ spec:
         prometheus.io/scrape: "true"
         prometheus.io/port: "9874"
         prometheus.io/path: /prom
-        "cni.projectcalico.org/ipAddrs": '["10.244.204.240"]'
+        "cni.projectcalico.org/ipAddrs": '["10.244.67.70"]'
     spec:
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: kubernetes.io/hostname
+                operator: In
+                values:
+                - maads-stg-worker04
+                - maads-stg-worker05
+                - maads-stg-worker06
       securityContext:
         fsGroup: 1000
       containers:

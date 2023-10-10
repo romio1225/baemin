@@ -1,8 +1,8 @@
 # image: biqa.tmax.com/v20.5/hyperdata20.5_tibero:20230504_v1
-image: hyperregistry-dev.deliveryservice.or.kr/bi/v20.5.0.5.0/hyperdata20.5_tibero:20230901_v1
+image: hyperregistry-stg.deliveryservice.or.kr/bi/v20.5.0.5.0/hyperdata20.5_tibero:20230901_v1
 
 loadbalancer:
-  enabled: true
+  enabled: false
   ip: <YOUR EXTERNAL_IP or MASTER NODE's IP>
 
 db:
@@ -14,7 +14,7 @@ memoryTarget: 6G
 
 resources:
   requests:
-    cpu: 1.3
+    cpu: 2
     memory: 8Gi
   limits:
     cpu: 4

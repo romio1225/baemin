@@ -29,7 +29,8 @@ global:
 ## @param image.debug Set to true if you would like to see extra information on logs
 ##
 image:
-  fullPath: hyperregistry-dev.deliveryservice.or.kr/bi/v20.5.0.3.0/hyperdata20.5_rabbitmq:20230721_v1
+  #fullPath: hyperregistry-dev.deliveryservice.or.kr/bi/v20.5.0.3.0/hyperdata20.5_rabbitmq:20230721_v1
+  fullPath: hyperregistry-stg.deliveryservice.or.kr/bi/v20.5.0.3.0/hyperdata20.5_rabbitmq:20230721_v1
   ## registry: docker.io
   ## repository: bitnami/rabbitmq
   ## tag: 3.10-debian-11
@@ -762,7 +763,18 @@ nodeAffinityPreset:
 ## Ref: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/#affinity-and-anti-affinity
 ## Note: podAffinityPreset, podAntiAffinityPreset, and  nodeAffinityPreset will be ignored when it's set
 ##
-affinity: {}
+#affinity: {}
+affinity:
+  nodeAffinity:
+    requiredDuringSchedulingIgnoredDuringExecution:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - maads-stg-worker04
+          - maads-stg-worker05
+          - maads-stg-worker06
 ## @param nodeSelector Node labels for pod assignment. Evaluated as a template
 ## ref: https://kubernetes.io/docs/user-guide/node-selection/
 ##
@@ -1240,7 +1252,8 @@ ingress:
   ## ref: https://kubernetes.io/blog/2020/04/02/improvements-to-the-ingress-api-in-kubernetes-1.18/
   ##
   # ingressClassName: ""
-  ingressClassName: "maads-dev-bi-nginx"
+  #ingressClassName: "maads-dev-bi-nginx"
+  ingressClassName: "hyperdata-nginx"
   ## @param ingress.existingSecret It is you own the certificate as secret.
   ##
   existingSecret: ""

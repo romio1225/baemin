@@ -390,7 +390,18 @@ nodeAffinityPreset:
 ## @param affinity Affinity for pod assignment
 ## Ref: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/#affinity-and-anti-affinity
 ##
-affinity: {}
+#affinity: {}
+affinity:
+  nodeAffinity:
+    requiredDuringSchedulingIgnoredDuringExecution:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - maads-stg-worker04
+          - maads-stg-worker05
+          - maads-stg-worker06
 ## @param nodeSelector Node labels for pod assignment
 ## ref: https://kubernetes.io/docs/user-guide/node-selection/
 ##
@@ -532,7 +543,8 @@ ingress:
   ## ref: https://kubernetes.io/blog/2020/04/02/improvements-to-the-ingress-api-in-kubernetes-1.18/
   ##
   # ingressClassName: ""
-  ingressClassName: "maads-dev-bi-nginx"
+  #ingressClassName: "maads-dev-bi-nginx"
+  ingressClassName: "maads-stg-bi-nginx"
   ## @param ingress.pathType Ingress path type
   ##
   pathType: ImplementationSpecific

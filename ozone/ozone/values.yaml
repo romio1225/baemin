@@ -1,5 +1,6 @@
 #image: biqa.tmax.com/v20.5/hyperdata20.5_ozone:20230504_v1
-image: hyperregistry-dev.deliveryservice.or.kr/bi/v20.5/hyperdata20.5_ozone:20230504_v1
+#image: hyperregistry-dev.deliveryservice.or.kr/bi/v20.5/hyperdata20.5_ozone:20230504_v1
+image: hyperregistry-stg.deliveryservice.or.kr/bi/v20.5/hyperdata20.5_ozone:20230504_v1
 
 #csi:
 #  registrar:

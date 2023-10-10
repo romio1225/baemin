@@ -1,8 +1,10 @@
 imagePullPolicy: IfNotPresent
 #image: biqa.tmax.com/v20.5/hyperdata20.5_flow:20230504_v1
-image: hyperregistry-dev.deliveryservice.or.kr/bi/v20.5.0.5.0/hyperdata20.5_flow:20230901_v1
+#image: hyperregistry-dev.deliveryservice.or.kr/bi/v20.5.0.5.0/hyperdata20.5_flow:20230901_v1
+image: hyperregistry-stg.deliveryservice.or.kr/bi/v20.5.0.5.0/hyperdata20.5_flow:20230901_v1
 
-ingressClassName: maads-dev-bi-nginx
+#ingressClassName: maads-dev-bi-nginx
+ingressClassName: maads-stg-bi-nginx
 
 server:
   port: 8081
@@ -19,7 +21,7 @@ resources:
     memory: 2Gi
   limits:
     # cpu: 6
-    cpu: 500m
+    cpu: 2
     memory: 4Gi
 
 pvc:

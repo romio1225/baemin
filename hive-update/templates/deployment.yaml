@@ -13,6 +13,17 @@ spec:
       labels:
         app: hive
     spec:
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: kubernetes.io/hostname
+                operator: In
+                values:
+                - maads-stg-worker04
+                - maads-stg-worker05
+                - maads-stg-worker06
       initContainers:
       - name: check-om
         image: {{ .Values.image.busybox }}

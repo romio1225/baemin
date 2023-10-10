@@ -1,0 +1,24 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-to-hdnginx
+  annotations:
+    kubernetes.io/ingress.class: "nginx-system"
+    nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
+spec:
+  #tls:
+  #- hosts:
+  #  - hdbi-stg.deliveryservice.or.kr
+  #  secretName: your-tls-secret
+  rules:
+  - host: "hdbi-stg.deliveryservice.or.kr"
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: maads-stg-bi-controller
+            port:
+              number: 443
+

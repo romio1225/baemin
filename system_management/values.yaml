@@ -4,11 +4,13 @@
 
 replicaCount: 1
 
-ingressClassName: maads-dev-bi-nginx
+#ingressClassName: maads-dev-bi-nginx
+ingressClassName: maads-stg-bi-nginx
 
 image:
   # fullPath: biqa.tmax.com/hyperdata20.5_rel/hyperdata20.5_system/system_management:20230829_f68e8bf2
-  fullPath: hyperregistry-dev.deliveryservice.or.kr/bi/v20.5.0.5.0/hyperdata20.5_system/system_management:20230901_v2
+  #fullPath: hyperregistry-dev.deliveryservice.or.kr/bi/v20.5.0.5.0/hyperdata20.5_system/system_management:20230901_v2
+  fullPath: hyperregistry-stg.deliveryservice.or.kr/bi/v20.5.0.5.0/hyperdata20.5_system/system_management:20230901_v2
   ## repository: harbor:31234/hyperdata_v20.5_system/system_management
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
@@ -87,7 +89,18 @@ nodeSelector: {}
 
 tolerations: []
 
-affinity: {}
+#affinity: {}
+affinity:
+  nodeAffinity:
+    requiredDuringSchedulingIgnoredDuringExecution:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - maads-stg-worker04
+          - maads-stg-worker05
+          - maads-stg-worker06
 
 prometheus:
   # serviceName: prometheus-kube-prometheus-prometheus
@@ -119,11 +132,11 @@ spring:
     username: hyperdata
     password: tmax
     # url: jdbc:tibero:thin:@tiberolocaldns:8629:tibero
-    url: jdbc:tibero:thin:@222.122.51.143:5051:tibero_maads_dev
+    url: jdbc:tibero:thin:@10.120.31.11:8629:tibero_maads_stg
     driverClassName: com.tmax.tibero.jdbc.TbDriver
     hikari:
       # jdbcUrl: jdbc:tibero:thin:@tiberolocaldns:8629:tibero
-      jdbcUrl: jdbc:tibero:thin:@222.122.51.143:5051:tibero_maads_dev
+      jdbcUrl: jdbc:tibero:thin:@10.120.31.11:8629:tibero_maads_stg
       driverClassName: com.tmax.tibero.jdbc.TbDriver
   rabbitmq:
     enable: true
@@ -172,11 +185,11 @@ tibero:
   # username: hyperdata
   # password: tmax
   # sid: tibero
-  ip: 222.122.51.143
-  port: 5051
+  ip: 10.120.31.11
+  port: 8629
   username: hyperdata
   password: tmax
-  sid: tibero_maads_dev
+  sid: tibero_maads_stg
 ###Kubernetes
 kubernetes:
   config:
@@ -201,7 +214,7 @@ keycloak:
   authServerUrl: http://keycloak:8888/
   sslRequired: none
   resource: HyperDataLogin
-  secret: wOqSdQyQrUJu7z0R1ygWPS8lzexHwK0F
+  secret: g1QZtDWE0SYZDl88vcAgF08ALDpxIOaN
   #credentials:
   #  secret: SECRET
   useResourceRoleMappings: true
@@ -216,9 +229,9 @@ ozone:
 
 ###customAddonWidget###
 customAddon:
-  enabled: false
+  enabled: true
   externalHost: 128.59.105.24
-  externalDetail: https://192.168.6.15:31519/hyperdata-widget/~fdc/sample.html
+  externalDetail: https://hdbi-stg.deliveryservice.or.kr:443/hyperdata-widget/~fdc/sample.html
   externalPort: 80
 
 imagePullSecrets: ""

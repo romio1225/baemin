@@ -19,15 +19,17 @@ loadBalancer:
 kubernetes:
   istio:
     ingressgateway:
-      ip: 222.122.51.145
+      ip: hdbi-ml-stg.deliveryservice.or.kr
       port: 80
 
 
-ingressClassName: maads-dev-bi-nginx
+#ingressClassName: maads-dev-bi-nginx
+ingressClassName: maads-stg-bi-nginx
 
 backend:
   # image: biqa.tmax.com/hyperdata20.5_rel/hyperdata20.5_mlplatform/backend:20230623_v1
-  image: hyperregistry-dev.deliveryservice.or.kr/bi/v20.5.0.4.0/hyperdata20.5_mlplatform/backend:20230804_v1
+  #image: hyperregistry-dev.deliveryservice.or.kr/bi/v20.5.0.4.0/hyperdata20.5_mlplatform/backend:20230804_v1
+  image: hyperregistry-stg.deliveryservice.or.kr/bi/v20.5.0.4.0/hyperdata20.5_mlplatform/backend:20230804_v1
   resources:
     limits:
       cpu: 500m
@@ -49,10 +51,10 @@ backend:
 # serving:
 #   image: biqa.tmax.com/hyperdata20.5_rel/hyperdata20.5_mlplatform/kserve:20230704_v1
 solution:
-  image: hyperregistry-dev.deliveryservice.or.kr/bi/v20.5.0.5.0/hyperdata20.5_mlplatform/agent:20230901_v1
+  image: hyperregistry-stg.deliveryservice.or.kr/bi/v20.5.0.5.0/hyperdata20.5_mlplatform/agent:20230901_v1
 
 downloader:
-  image: hyperregistry-dev.deliveryservice.or.kr/bi/v20.5.0.4.0/hyperdata20.5_mlplatform/downloader:20230804_v1
+  image: hyperregistry-stg.deliveryservice.or.kr/bi/v20.5.0.4.0/hyperdata20.5_mlplatform/downloader:20230804_v1
 
 serving:
-  image: hyperregistry-dev.deliveryservice.or.kr/bi/v20.5.0.4.0/hyperdata20.5_mlplatform/kserve:20230804_v1
+  image: hyperregistry-stg.deliveryservice.or.kr/bi/v20.5.0.4.0/hyperdata20.5_mlplatform/kserve:20230804_v1

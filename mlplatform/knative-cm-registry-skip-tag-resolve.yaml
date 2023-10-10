@@ -1,0 +1,3 @@
+kubectl get cm -n knative-serving config-deployment -o yaml | \
+   sed -z "s/\ndata:\n/\ndata:\n  registries-skipping-tag-resolving: \"hyperregistry-stg.deliveryservice.or.kr\"\n/g" | \
+   kubectl apply -f -

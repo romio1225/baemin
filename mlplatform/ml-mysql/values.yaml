@@ -4,7 +4,8 @@ mysql:
   database: mlplatform
   port: 3306
   # image: biqa.tmax.com/hyperdata20.5_rel/hyperdata20.5_mlplatform/mysql:20230623_v1
-  image: hyperregistry-dev.deliveryservice.or.kr/bi/v20.5.0.3.0/hyperdata20.5_mlplatform/mysql:20230721_v1
+  #image: hyperregistry-dev.deliveryservice.or.kr/bi/v20.5.0.3.0/hyperdata20.5_mlplatform/mysql:20230721_v1
+  image: hyperregistry-stg.deliveryservice.or.kr/bi/v20.5.0.3.0/hyperdata20.5_mlplatform/mysql:20230721_v1
   resources:
     requests:
       cpu: 200m

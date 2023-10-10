@@ -12,6 +12,17 @@ spec:
       labels:
         app: mlplatform-backend-deploy
     spec:
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: kubernetes.io/hostname
+                operator: In
+                values:
+                - maads-stg-worker04
+                - maads-stg-worker05
+                - maads-stg-worker06
       securityContext:
         fsGroup: 1000
       serviceAccountName: mlplatform-backend-sa

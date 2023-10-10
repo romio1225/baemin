@@ -2,7 +2,8 @@
 #image: hyperregistry-dev.deliveryservice.or.kr/bi/v20.5.0.5.0/hyperdata20.5_visualization:20230901_v2
 image: hyperregistry-dev.deliveryservice.or.kr/bi/hyperdata20.5_rel/hyperdata20.5_visualization:20230918_6dc45930
 
-ingressClassName: maads-dev-bi-nginx
+#ingressClassName: maads-dev-bi-nginx
+ingressClassName: maads-stg-bi-nginx
 
 version:
   major: 20
@@ -18,7 +19,7 @@ proxy:
 server:
   # ip: 192.1.1.249
   # port: 30303
-  ip: 10.151.30.16
+  ip: hdbi-stg.deliveryservice.or.kr
   port: 443
   servlet:
     contextPath: /hyperdata/v1
@@ -27,7 +28,7 @@ server:
   share:
     # host_url: "192.1.1.249"
     # port: "30303"
-    host_url: "10.151.30.16"
+    host_url: "hdbi-stg.deliveryservice.or.kr"
     port: "443"
 
 download_max_row: -1
@@ -56,17 +57,18 @@ loggingPath: /db/visualization
 db:
   # address: tiberolocaldns
   # port: 8629
-  address: 222.122.51.143
-  port: 5051
+  address: 10.120.31.11
+  port: 8629
   persistentVolumeClaimName: tibero-pvc-db
   mountPath: /db
   username: hyperdata
   password: tmax
   # sid: tibero
-  sid: tibero_maads_dev
+  #sid: tibero_maads_dev
+  sid: tibero_maads_stg
   driver_class_name: com.tmax.tibero.jdbc.TbDriver
   # jdbc_url: jdbc:tibero:thin:@tiberolocaldns:8629:tibero
-  jdbc_url: jdbc:tibero:thin:@222.122.51.143:5051:tibero_maads_dev
+  jdbc_url: jdbc:tibero:thin:@10.120.31.11:8629:tibero_maads_stg
 
 resources:
   requests:

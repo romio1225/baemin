@@ -93,7 +93,8 @@ diagnosticMode:
 ## @param image.debug Specify if debug values should be set
 ##
 image:
-  fullPath: hyperregistry-dev.deliveryservice.or.kr/bi/v20.5/hyperdata20.5_system/postgresql:20230504_v1
+  #fullPath: hyperregistry-dev.deliveryservice.or.kr/bi/v20.5/hyperdata20.5_system/postgresql:20230504_v1
+  fullPath: hyperregistry-stg.deliveryservice.or.kr/bi/v20.5/hyperdata20.5_system/postgresql:20230504_v1
   ## registry: biqa.tmax.com
   ## repository: v20.5/hyperdata20.5_system/postgresql
   ## tag: 20230504_v1
@@ -517,7 +518,18 @@ primary:
   ## ref: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/#affinity-and-anti-affinity
   ## Note: primary.podAffinityPreset, primary.podAntiAffinityPreset, and primary.nodeAffinityPreset will be ignored when it's set
   ##
-  affinity: {}
+  #affinity: {}
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+        - matchExpressions:
+          - key: kubernetes.io/hostname
+            operator: In
+            values:
+            - maads-stg-worker04
+            - maads-stg-worker05
+            - maads-stg-worker06
   ## @param primary.nodeSelector Node labels for PostgreSQL primary pods assignment
   ## ref: https://kubernetes.io/docs/user-guide/node-selection/
   ##
