@@ -6,13 +6,14 @@
 - kubernetes 1.19.10
 
 ## Install Order
+
 1. [nginx](./nginx)
 2. [tibero](./tibero)
-3. [be_common](./hyperdata-be-common)
-4. [ozone](./ozone)
-5. [hive](./hive)
+3. [tbgw](./tbgw-k8s-dir)
+4. [hyperdata](./hyperdata)
+5. [neo4j](./neo4j)
 6. [mysql](./mysql)
-7. [hyperdata_fe](./hyperdata-fe) 
+7. [hyperdata_fe](./hyperdata-fe)
 8. [system_management](./system_management)
 9. [virtualization](./virtualization)
 10. [flow](./flow)
