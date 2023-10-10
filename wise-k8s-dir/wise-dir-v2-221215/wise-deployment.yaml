@@ -1,0 +1,62 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: wise-deployment-v2
+  namespace: hyperdata
+spec:
+  selector:
+    matchLabels:
+      app: wise-v2
+  replicas: 3
+  strategy:
+    type: RollingUpdate
+  revisionHistoryLimit: 1
+  template:
+    metadata:
+      labels:
+        app: wise-v2
+    spec:
+      containers:
+      - name: wiseolapcon
+        #image: 172.24.9.40:5000/wiseolap:6.9.9
+        #image: 172.24.9.40:5000/wiseolap:7.0.0
+        #image: 172.24.9.40:5000/wiseolap:7.0.2 #web xml session conf false버전. 에러가 있음.
+        #image: 172.24.9.40:5000/wiseolap:7.0.3
+        #image: 172.24.9.40:5000/wiseolap:7.0.5
+        image: 172.24.9.40:5000/wiseolap:7.0.6
+        envFrom:
+        - configMapRef:
+            name: cm-wiseolap
+        #- secretRef:
+        #    name: sec-dev
+        command:
+        - "/bin/bash"
+        args: ["/root/command1/command1.sh"]
+        ports:
+        - containerPort: 8088
+          name: listener
+          protocol: TCP
+        - containerPort: 9736
+          name: admin
+          protocol: TCP
+        - containerPort: 22
+          name: sshn
+          protocol: TCP
+        resources:
+          requests:
+            cpu: 4
+            memory: 34Gi
+          limits:
+            cpu: 4
+            memory: 34Gi
+        readinessProbe:
+          tcpSocket:
+            port: 8088
+          initialDelaySeconds: 15
+          periodSeconds: 20
+        livenessProbe:
+          tcpSocket:
+            port: 8088
+          initialDelaySeconds: 100
+          periodSeconds: 600
+      terminationGracePeriodSeconds: 10

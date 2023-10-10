@@ -1,0 +1,57 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tbgw-deployment
+  namespace: hyperdata
+spec:
+  selector:
+    matchLabels:
+      app: tbgw
+  replicas: 1
+  strategy:
+    type: RollingUpdate
+  revisionHistoryLimit: 1
+  template:
+    metadata:
+      labels:
+        app: tbgw
+    spec:
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: kubernetes.io/hostname
+                operator: In
+                values:
+                - workernode05
+      containers:
+      - name: tbgwcon
+        image: 172.24.9.40:5000/tbgw:2.0.0
+        #envFrom:
+        #- configMapRef:
+        #    name: cm-wiseolap
+        #- secretRef:
+        #    name: sec-dev
+        ports:
+        - containerPort: 9093
+          name: gw
+          protocol: TCP
+        - containerPort: 22
+          name: sshn
+          protocol: TCP
+        resources:
+          requests:
+            cpu: 1
+            memory: 40Gi
+        readinessProbe:
+          tcpSocket:
+            port: 9093
+          initialDelaySeconds: 15
+          periodSeconds: 20
+        livenessProbe:
+          tcpSocket:
+            port: 9093
+          initialDelaySeconds: 100
+          periodSeconds: 600
+      terminationGracePeriodSeconds: 10

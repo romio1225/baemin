@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cm-wiseolap
+  namespace: hyperdata
+  #namespace: wisetest
+data:
+  TB_IP: "172.23.71.12"
+  TB_PORT: "31957"
+  HD_IP: "172.23.71.81"
+  HD_PORT: "443"
+  #WISE_MAX_MEM: "98304"
+  #WISE_MIN_MEM: "98304"
+  WISE_MAX_MEM: "32000"
+  WISE_MIN_MEM: "32000"

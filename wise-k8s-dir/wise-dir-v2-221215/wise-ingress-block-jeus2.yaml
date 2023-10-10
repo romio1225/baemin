@@ -1,0 +1,22 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    nginx.ingress.kubernetes.io/proxy-body-size: 1024m
+    nginx.ingress.kubernetes.io/proxy-connect-timeout: "1800"
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "1800"
+    nginx.ingress.kubernetes.io/proxy-send-timeout: "1800"
+    nginx.ingress.kubernetes.io/rewrite-target: /
+  name: wise-ingress-block
+  namespace: hyperdata
+spec:
+  ingressClassName: hyperdata-nginx
+  rules:
+  - http:
+      paths:
+      - backend:
+          serviceName: wiseolap-svc-v2
+          servicePort: 7777
+        path: /
+        pathType: Exact
+

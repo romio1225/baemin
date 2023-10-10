@@ -1,0 +1,34 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-resource-backend
+  namespace: hyperdata
+  annotations:
+    #kubernetes.io/ingress.class: nginx
+    #nginx.ingress.kubernetes.io/default-backend: wiseolap-svc
+    #nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    #nginx.ingress.kubernetes.io/ssl-passthrough: "true"
+    #nginx.ingress.kubernetes.io/app-root: /
+    #nginx.ingress.kubernetes.io/rewrite-target: https://hyperdata:32499/editds/$2
+    nginx.ingress.kubernetes.io/rewrite-target: https://hdbi.catholic.kr/hyperdata20/
+spec:
+  ingressClassName: hyperdata-nginx
+  defaultBackend:
+    service:
+      name: hyperdata-svc-hd
+      port:
+        number: 8080
+  #  resource:
+  #    apiGroup: k8s.example.com
+  #    kind: StorageBucket
+  #    name: static-assets
+  #rules:
+  #  - http:
+  #      paths:
+  #        - path: /(.*)
+  #          pathType: ImplementationSpecific
+  #          backend:
+  #            resource:
+  #              apiGroup: k8s.example.com
+  #              kind: StorageBucket
+  #              name: icon-assets

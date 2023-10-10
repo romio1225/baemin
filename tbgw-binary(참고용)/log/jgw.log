@@ -1,0 +1,1056 @@
+03:00:09.519 817291838 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.520 817291839 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.520 817291839 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.520 817291839 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.520 817291839 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.520 817291839 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.520 817291839 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.520 817291839 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.522 817291841 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.522 817291841 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.522 817291841 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.522 817291841 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.522 817291841 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.522 817291841 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.523 817291842 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.523 817291842 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.524 817291843 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.524 817291843 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.524 817291843 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.524 817291843 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.524 817291843 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.524 817291843 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.524 817291843 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.524 817291843 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.535 817291854 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.535 817291854 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.535 817291854 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.535 817291854 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.535 817291854 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.535 817291854 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.535 817291854 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.535 817291854 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.537 817291856 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.537 817291856 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.537 817291856 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.537 817291856 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.537 817291856 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.537 817291856 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.538 817291857 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.538 817291857 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.539 817291858 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.539 817291858 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.539 817291858 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.539 817291858 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.539 817291858 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.539 817291858 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.539 817291858 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.539 817291858 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.549 817291868 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.549 817291868 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.549 817291868 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.549 817291868 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.550 817291869 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.550 817291869 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.550 817291869 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.550 817291869 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.552 817291871 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.552 817291871 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.552 817291871 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.552 817291871 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.552 817291871 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.552 817291871 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.552 817291871 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.552 817291871 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.553 817291872 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.553 817291872 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.554 817291873 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.554 817291873 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.554 817291873 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.554 817291873 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.554 817291873 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.554 817291873 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.564 817291883 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.564 817291883 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.564 817291883 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.564 817291883 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.564 817291883 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.565 817291884 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.565 817291884 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.565 817291884 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.567 817291886 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.567 817291886 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.567 817291886 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.567 817291886 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.567 817291886 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.567 817291886 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.567 817291886 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.567 817291886 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.568 817291887 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.568 817291887 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.569 817291888 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.569 817291888 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.569 817291888 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.569 817291888 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.569 817291888 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.569 817291888 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.579 817291898 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.579 817291898 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.579 817291898 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.579 817291898 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.580 817291899 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.580 817291899 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.580 817291899 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.580 817291899 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.582 817291901 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.582 817291901 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.582 817291901 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.582 817291901 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.582 817291901 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.582 817291901 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.582 817291901 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.582 817291901 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.584 817291903 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.584 817291903 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.584 817291903 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.584 817291903 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.584 817291903 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.584 817291903 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.584 817291903 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.584 817291903 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.604 817291923 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.604 817291923 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.604 817291923 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.604 817291923 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.604 817291923 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.605 817291924 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.605 817291924 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.605 817291924 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.608 817291927 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.608 817291927 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.608 817291927 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.608 817291927 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.608 817291927 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.608 817291927 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.608 817291927 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.608 817291927 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.610 817291929 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.610 817291929 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.610 817291929 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.610 817291929 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.610 817291929 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.611 817291930 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.611 817291930 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.611 817291930 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.629 817291948 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.629 817291948 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.629 817291948 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.629 817291948 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.629 817291948 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.629 817291948 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.629 817291948 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.629 817291948 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.631 817291950 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.632 817291951 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.632 817291951 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.632 817291951 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.632 817291951 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.632 817291951 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.632 817291951 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.632 817291951 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.635 817291954 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.635 817291954 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.635 817291954 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.635 817291954 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.635 817291954 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.635 817291954 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.635 817291954 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.635 817291954 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.646 817291965 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.646 817291965 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.646 817291965 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.646 817291965 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.647 817291966 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.647 817291966 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.647 817291966 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.647 817291966 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.649 817291968 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.649 817291968 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.649 817291968 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.649 817291968 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.649 817291968 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.649 817291968 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.649 817291968 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.649 817291968 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.651 817291970 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.651 817291970 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.651 817291970 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.651 817291970 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.651 817291970 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.651 817291970 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.651 817291970 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.651 817291970 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.661 817291980 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.661 817291980 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.662 817291981 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.662 817291981 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.662 817291981 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.662 817291981 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.662 817291981 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.662 817291981 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.664 817291983 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.664 817291983 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.664 817291983 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.664 817291983 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.664 817291983 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.664 817291983 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.664 817291983 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.664 817291983 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.666 817291985 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.666 817291985 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.666 817291985 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.666 817291985 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.666 817291985 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.666 817291985 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.666 817291985 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.666 817291985 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.676 817291995 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.676 817291995 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.677 817291996 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.677 817291996 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.677 817291996 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.677 817291996 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.679 817291998 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.679 817291998 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.681 817292000 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.681 817292000 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.681 817292000 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.681 817292000 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.681 817292000 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.682 817292001 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.682 817292001 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.682 817292001 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.683 817292002 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.683 817292002 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.683 817292002 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.683 817292002 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.683 817292002 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.683 817292002 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.684 817292003 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.684 817292003 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.703 817292022 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.703 817292022 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.703 817292022 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.703 817292022 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.703 817292022 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.704 817292023 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.704 817292023 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.704 817292023 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.706 817292025 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.706 817292025 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.706 817292025 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.706 817292025 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.706 817292025 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.706 817292025 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.706 817292025 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.706 817292025 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.709 817292028 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.709 817292028 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.709 817292028 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.709 817292028 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.709 817292028 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.709 817292028 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.709 817292028 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.710 817292029 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.725 817292044 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.725 817292044 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.725 817292044 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.725 817292044 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.726 817292045 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.726 817292045 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.726 817292045 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.726 817292045 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.728 817292047 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.728 817292047 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.728 817292047 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.728 817292047 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.728 817292047 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.728 817292047 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.728 817292047 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.728 817292047 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.730 817292049 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.730 817292049 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.730 817292049 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.730 817292049 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.730 817292049 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.730 817292049 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.730 817292049 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.730 817292049 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.740 817292059 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.740 817292059 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.740 817292059 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.740 817292059 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.740 817292059 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.741 817292060 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.741 817292060 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.741 817292060 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.743 817292062 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.743 817292062 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.743 817292062 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.743 817292062 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.743 817292062 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.743 817292062 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.743 817292062 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.743 817292062 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.745 817292064 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.745 817292064 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.745 817292064 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.745 817292064 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.745 817292064 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.745 817292064 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.745 817292064 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.745 817292064 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.756 817292075 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.756 817292075 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.756 817292075 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.756 817292075 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.756 817292075 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.756 817292075 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.756 817292075 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.756 817292075 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.758 817292077 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.758 817292077 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.758 817292077 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.758 817292077 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.758 817292077 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.759 817292078 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.759 817292078 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.759 817292078 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.760 817292079 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.760 817292079 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.760 817292079 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send ok reply
+03:00:09.760 817292079 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.760 817292079 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.PostgreSQLComm  - do Explicit prepare
+03:00:09.760 817292079 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:244)
+	at com.tmax.tibero.gateway.comm.PostgreSQLComm.doExplicitPrepare(PostgreSQLComm.java:298)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:186)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)
+Caused by: org.postgresql.util.PSQLException: ERROR: function to_char(character varying) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 60
+	... 12 more
+03:00:09.761 817292080 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - send Error reply
+03:00:09.761 817292080 [SessThr-253] INFO  com.tmax.tibero.gateway.comm.TbComm  - read msg...
+03:00:09.764 817292083 [SessThr-253] ERROR com.tmax.tibero.gateway.comm.Gateway  - SQLException ERROR STACK TRACE:
+com.tmax.tibero.gateway.TbSQLException: I/O error while reading from the server. - End Of Stream
+	at com.tmax.tibero.gateway.comm.TbStream.readMsgHdr(TbStream.java:253)
+	at com.tmax.tibero.gateway.comm.TbComm.readMsg(TbComm.java:186)
+	at com.tmax.tibero.gateway.comm.Gateway.processRequest(Gateway.java:151)
+	at com.tmax.tibero.gateway.server.Worker.run(Worker.java:39)

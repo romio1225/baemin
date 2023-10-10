@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: wiseolap-svc
+  namespace: wisetest
+  #namespace: wise
+spec:
+  selector:
+    app: wise
+  ports:
+  - name: web
+    port: 8888
+    targetPort: 8088
+    #nodePort: 30301
+    #nodePort: 30302
+  - name: web-admin
+    port: 8889
+    targetPort: 9736
+    #nodePort: 30300
+    #nodePort: 30303
+  sessionAffinity: ClientIP
+  type: NodePort
+  externalTrafficPolicy: Cluster
