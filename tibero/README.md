@@ -1,10 +1,17 @@
 # Tibero 배달공제 버전 설치
 
-1.  install tibero
+0. 배달공제는 tibero를 클라우드팀에서 설치해준 통합DB tibero를 사용함. 따라서, pvc만 활용을 위해 tibero helm으로 설치 후, 제대로 설치 확인하고 helm delete로 삭제해주면 됨. pvc는 남아있기때문.
 
-    ```
-    helm install -n maads-stg-bi tibero tibero
-    ```
+1. install tibero
+
+   ```
+   helm install -n maads-stg-bi tibero tibero
+   ```
+
+2. delete tibero(제대로 설치된지 확인후)
+   ```
+   helm delete -n maads-stg-bi tibero tibero
+   ```
 
 #
 
