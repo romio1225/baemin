@@ -1,0 +1,9 @@
+image: 172.24.9.40:5000/hyperdata20.4.0.7.0_kca:20221028_v1
+
+resources:
+  requests:
+    cpu: 2.5
+    memory: 4Gi
+  limits:
+    cpu: 2.5
+    memory: 4Gi

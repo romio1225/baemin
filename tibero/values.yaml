@@ -1,0 +1,21 @@
+image: 172.24.9.40:5000/hyperdata20.4.0.7.0_tb:20221028_v1
+
+loadbalancer:
+  enabled: false
+  ip: 172.31.45.59
+
+db:
+  persistentVolumeClaimName: tibero-pvc-db
+  mountPath: /db
+
+shmSize: 32Gi
+memoryTarget: 64Gi
+
+resources:
+  requests:
+    cpu: 4
+    memory: 70Gi
+  limits:
+    cpu: 4
+    memory: 70Gi
+  storage: 300Gi

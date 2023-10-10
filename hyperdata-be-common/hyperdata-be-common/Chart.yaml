@@ -1,5 +1,0 @@
-apiVersion: v2
-appVersion: v20.5.0
-name: hyperdata-be-common
-description: Hyperdata Backend Common Helm chart for Kubernetes
-version: 0.1.0
