@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: wise-deployment-v2
-  namespace: hyperdata
+  #namespace: hyperdata
 spec:
   selector:
     matchLabels:

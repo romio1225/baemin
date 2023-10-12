@@ -2,15 +2,17 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: wise-admin-ingress
-  namespace: hyperdata
+  #namespace: hyperdata
   annotations:
     #kubernetes.io/ingress.class: hyperdata-nginx
     #nginx.ingress.kubernetes.io/default-backend: wiseolap-svc
     #nginx.ingress.kubernetes.io/ssl-redirect: "true"
     #nginx.ingress.kubernetes.io/ssl-passthrough: "true"
     #nginx.ingress.kubernetes.io/app-root: /
-    nginx.ingress.kubernetes.io/rewrite-target: /
-    #nginx.ingress.kubernetes.io/rewrite-target: $1
+    #ingress.kubernetes.io/whitelist-source-range: "10.10.62.19/24"
+    #nginx.ingress.kubernetes.io/whitelist-source-range: 0.0.0.0/0, 10.10.62.19/24
+    # nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/rewrite-target: /$1$2
     nginx.ingress.kubernetes.io/proxy-body-size: 1024m
     nginx.ingress.kubernetes.io/proxy-connect-timeout: "1800"
     nginx.ingress.kubernetes.io/proxy-read-timeout: "1800"
@@ -18,40 +20,16 @@ metadata:
     nginx.ingress.kubernetes.io/affinity: cookie
     nginx.ingress.kubernetes.io/session-cookie-name: wi_id
     nginx.ingress.kubernetes.io/session-cookie-path: /editds
-    #ingress.kubernetes.io/whitelist-source-range: "10.10.62.19/24"
-    #nginx.ingress.kubernetes.io/whitelist-source-range: 0.0.0.0/0, 10.10.62.19/24
+
 spec:
   ingressClassName: wise-admin-nginx
   rules:
   - http:
       paths:
-      #- path: /editds/report/config(.*)
-      - path: /
-        #pathType: Exact
+      - path: /(.*)(/|$)
         pathType: Prefix
         backend:
           service:
             name: wiseolap-svc-v2
             port:
               number: 8888
-  #- http:
-  #    paths:
-  #    - path: /editds/report/config.do
-  #      pathType: Prefix
-  #      backend:
-  #        service:
-  #          name: wiseolap-svc-v2
-  #          port:
-  #            number: 8888
-  #- http:
-  #    paths:
-  #    - path: /()(.*)
-  #      pathType: Prefix
-  #      #pathType: ImplementationSpecific
-  #      backend:
-  #        service:
-  #          name: wiseolap-svc
-  #          port:
-  #            number: 8888
-  #tls:
-  #- secretName: wisetest.wise-https-secret

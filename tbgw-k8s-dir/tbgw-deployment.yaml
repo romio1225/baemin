@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: tbgw-deployment
-  namespace: hyperdata
+  #namespace: hyperdata
 spec:
   selector:
     matchLabels:

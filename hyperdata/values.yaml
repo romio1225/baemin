@@ -17,14 +17,13 @@ proxy:
   timeout: 1800
 
 webserver:
-  #ip: 172.23.71.12
   ip: 172.23.71.81
-  fqdn: hdbi.catholic.kr
-  #port: 32499
+  fqdn:
+    enabled: true
+    name: hdbi.catholic.kr
   port: 443
 
 loadbalancer:
-  #enabled: false
   enabled: true
   SUPERVDB_UCS_PORT: 9994
   
@@ -78,15 +77,10 @@ virtualization:
 dbConnection:
   useVdbOn: 
   #아무것도 안적는게 false, 뭐라도 적으면 true로 되어있음.
-  #상세내용은 notion에 적음.
-  #ws_db_connection_vdb_on: false
+  # 즉, useVdbOn: false  -->  true로 적용됨.
+
 
 visualization:
   vis_access_key: WISE
   #vis_access_url: http://172.23.71.12:30301
-  #vis_access_url: https://hyperdata.catholic.kr:30022
   vis_access_url: https://hdbi.catholic.kr
-
-#jeuseHDserverMEM:
-  #hd_max_mem: 22528
-  #hd_min_mem: 22528

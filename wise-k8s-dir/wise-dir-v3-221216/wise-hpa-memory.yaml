@@ -2,7 +2,7 @@ apiVersion: autoscaling/v2beta2
 kind: HorizontalPodAutoscaler
 metadata:
   name: hpa-resource-memory
-  namespace: hyperdata
+  #namespace: hyperdata
 spec:
   maxReplicas: 8
   minReplicas: 4
