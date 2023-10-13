@@ -14,7 +14,7 @@ spec:
       port: 8629
       protocol: TCP
       targetPort: 8629
-      nodePort: 31957
+      nodePort: {{ .Values.nodePort }}
     - name: ora-gw
       port: 9999
       protocol: TCP

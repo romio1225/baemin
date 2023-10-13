@@ -1,5 +1,7 @@
 image: 172.24.9.40:5000/hyperdata20.4.0.7.0_tb:20221028_v1
 
+nodePort: 31957
+
 loadbalancer:
   enabled: false
   ip: 172.31.45.59
