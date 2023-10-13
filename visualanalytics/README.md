@@ -1,8 +1,21 @@
+# visualanalytics 배달공제 버전 설치
+
+1. visualanalytics Install
+
+   ```
+   helm install -n maads-stg-bi visualanalytics visualanalytics
+   ```
+
+#
+
+#
+
 # visual analytics 시각화
 
 1. install (--set image에 희망하는 이미지를 사용)
 
    1.1 LoadBalancer 사용시
+
    ```
    helm install -n hyperdata visualanalytics visualanalytics \
    --set image=${HARBOR_URL}/${HARBOR_REPO}/${IMAGE_NAME}:${TAG} \
@@ -12,6 +25,7 @@
    ```
 
    1.2 NodePort 사용시
+
    ```
    helm install -n hyperdata visualanalytics visualanalytics \
    --set image=${HARBOR_URL}/${HARBOR_REPO}/${IMAGE_NAME}:${TAG} \
@@ -21,7 +35,8 @@
    --set hyperdata.share.port={viewer에 사용할 port (기본값 : 서버 port)}
    ```
 
-2.  Uninstall visualanalytics
-   ```
-   helm uninstall -n hyperdata visualanalytics visualanalytics
-   ```
+2. Uninstall visualanalytics
+
+```
+helm uninstall -n hyperdata visualanalytics visualanalytics
+```

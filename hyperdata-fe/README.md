@@ -1,3 +1,15 @@
+# hyperdata-fe 배달공제 버전 설치
+
+1. install hyperdata-fe
+
+   ```shell
+   helm install -n maads-stg-bi hyperdata-fe hyperdata-fe
+   ```
+
+#
+
+#
+
 # hyperdata
 
 1. install hyperdata-fe
@@ -86,6 +98,7 @@
             mv /db/temp/logo.svg /db/temp/logo_old.svg;
             mv /db/temp/logo_new.svg /db/temp/logo.svg;
          ```
+
 4. install with AutoLogin
    1. hyperdata-fe 설치
       hyperdata-fe-legacy-ingress에서 HyperData host와 port를 설정해두면 해당 경로로 301 redirect하여 autoLogin을 지원함
@@ -94,8 +107,8 @@
          --set image=${HARBOR_URL}/${HARBOR_REPO}/${IMAGE_NAME}:${TAG} \
          --set legacy.redirect=${host}:${port}
       ```
-         ### Example
-         _ex). hyperdata 주소가 "https://192.168.179.40:8080" 인 경우_
+      ### Example
+      _ex). hyperdata 주소가 "https://192.168.179.40:8080" 인 경우_
       ```shell
          helm install -n hyperdata hyperdata-fe hyperdata-fe \
          --set image=${HARBOR_URL}/${HARBOR_REPO}/${IMAGE_NAME}:${TAG} \

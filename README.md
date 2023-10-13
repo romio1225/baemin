@@ -7,7 +7,7 @@
 
 ## Install Order
 
-1. [ingress-nginx](./ingress-nginx-uptodate)
+1. [ingress-nginx](./ingress-nginx)
 2. [tibero](./tibero)
 3. [be_common](./hyperdata-be-common)
 4. [ozone](./ozone)
@@ -23,4 +23,9 @@
 <br>
 
 - 모든 `--set`은 `values.yaml`에 적어놨음.
+
 - 단, ingress-nginx, istio, knative, kserve, argo 등 오픈소스 프로젝트는 `values.yaml`이 길기때문에 기존처럼 `--set`으로 셋팅해줄 값 적어놓음.
+
+- `ssl` 폴더는 인증서 폴더임.
+
+- `temp_ingress` 폴더는 이중 ingress-nginx로 적용하려고 만들어 놓은 것임.(참고용)
