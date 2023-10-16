@@ -1,12 +1,37 @@
 # hyperdata-be-common 배달공제 버전 설치
 
-1.  hyperdata-be-common설치
+0. 배달공제는 통합DB를 사용하기에 사전에 hyperdata, hyperdata_editor스키마가 만들어져 있는지 확인할 것!  
+   없을 시, 아래 스크립트 내용을 기반으로 클라우드팀 요청.
 
-    ```
-    helm install -n maads-stg-bi hyperdata-be-common hyperdata-be-common
-    ```
+   ```
+   CREATE TABLESPACE hyperdata
+   DATAFILE '/tibero_data/hyperdata/hyperdata_001.dtf' SIZE 20G
+   EXTENT MANAGEMENT LOCAL AUTOALLOCATE;
 
-2.  hyperdata-be-common 이 통합DB tibero에 잘 설치되었는지만 확인.
+   CREATE TABLESPACE hyperdata_editor
+   DATAFILE '/tibero_data/hyperdata_editor/hyperdata_editor_001.dtf' SIZE 2G
+   EXTENT MANAGEMENT LOCAL AUTOALLOCATE;
+
+
+   -- create_hyperdata_user
+   CREATE USER HYPERDATA IDENTIFIED BY 'tmax'
+   DEFAULT TABLESPACE HYPERDATA;
+   GRANT ALL PRIVILEGES TO HYPERDATA;
+
+   -- create hd_editor user for flow module
+   CREATE USER HYPERDATA_EDITOR IDENTIFIED BY 'tmax'
+   DEFAULT TABLESPACE HYPERDATA_EDITOR;
+
+   commit;
+   ```
+
+1. hyperdata-be-common설치
+
+   ```
+   helm install -n maads-stg-bi hyperdata-be-common hyperdata-be-common
+   ```
+
+2. hyperdata-be-common 이 통합DB tibero에 잘 설치되었는지만 확인.
 
 #
 
