@@ -23,9 +23,15 @@ db:
   # persistentVolumeClaimName: tibero-pvc-db
 
   mountPath: /db
+  ## 동일 bd네임스페이스일 때
   #ip: tiberolocaldns.bd.svc.cluster.local
-  #ip: 222.122.51.143
+  #port: 8629
+
+  ## 타 네임스페이스 또는 다른 호스트DB일때
+  #ip: 222.122.51.14
+  #port: 5555
   ip: 10.120.31.11
   port: 8629
+
   sid: tibero_maads_stg
   persistentVolumeClaimName: tibero-pvc-db
